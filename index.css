@@ -1,0 +1,148 @@
+@font-face{
+  font-family:'bitbit';
+  src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'bitbit',sans-serif;
+  font-weight: 100;
+}
+.box {
+  background-color: black;
+}
+.start,
+.end,
+.explan,
+.box,
+.result > .fail,
+.result > .success,
+.restart {
+  position: absolute;
+}
+.box1 {
+  bottom: 0;
+  width: 48%;
+  height: 20%;
+}
+.box2 {
+  bottom: 0;
+  right: 0;
+  width: 49%;
+  height: 30%;
+}
+.box3 {
+  bottom: 10%;
+  width: 20%;
+  height: 50%;
+}
+.box4 {
+  bottom: 25%;
+  right: 0;
+  width: 77%;
+  height: 10%;
+}
+.box5 {
+  bottom: 40%;
+  width: 30%;
+  height: 10%;
+}
+.box6 {
+  bottom: 30%;
+  right: 0;
+  width: 67%;
+  height: 15%;
+}
+.box7 {
+  bottom: 50%;
+  width: 70%;
+  height: 20%;
+}
+.box8 {
+  bottom: 40%;
+  right: 0;
+  width: 27%;
+  height: 40%;
+}
+.box9 {
+  top: 0px;
+  width: 30%;
+  height: 40%;
+}
+.box10 {
+  top:0px;
+  right: 0;
+  width: 67%;
+  height: 25%;
+}
+.start,
+.end {
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 11px;
+  width: 100px;
+
+}
+.end {
+  top: 0px;
+  left: 29%;
+}
+.start {
+  bottom: 0px;
+  left: 47%;
+  z-index: 9999;
+}
+.explan {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(223, 223, 223, .8);
+  z-index: 999;
+  text-align: center;
+  padding: auto 0;
+}
+.explan > h1 {
+  margin: 9% 0;
+  font-size: 4rem;
+}
+.explan > div {
+  font-size: 2rem;
+}
+.explan > div > ol {
+  margin: 10px;
+  line-height: 50px;
+  list-style: none;
+}
+li > .fail {
+  color: red;
+}
+li > .success {
+  color: blue
+}
+.result > .fail,
+.result > .success{
+  top: 40%;
+  left: 40%;
+}
+.result > div > img {
+  width: 50px;
+  height: 50px;
+  transform-origin: center;
+  visibility: hidden;
+  transition: all 1s;
+}
+.restart {
+  top: 40%;
+  width: 100%;
+  background-color: lightcoral;
+  font-size: 3rem;
+  padding: 50px;
+  border: 0;
+  visibility: hidden;
+}
